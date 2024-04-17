@@ -2,19 +2,19 @@ import java.util.Locale;
 
 public class Segment
 {
-    private Point start, end;
+    private Vec2 start, end;
 
-    public Segment(Point start, Point end)
+    public Segment(Vec2 start, Vec2 end)
     {
         this.start = start;
         this.end = end;
     }
 
-    public Point getStart() {
+    public Vec2 getStart() {
         return start;
     }
 
-    public Point getEnd() {
+    public Vec2 getEnd() {
         return end;
     }
 
@@ -28,14 +28,14 @@ public class Segment
         return String.format(Locale.ENGLISH,"<line x1=\"%f\" y1=\"%f\" x2=\"%f\" y2=\"%f\" style=\"stroke:red;stroke-width:2\" />", start.x, start.y, end.x, end.y);
     }
 
-    public static Segment[] perpendicularTo(Segment segment, Point point)
+    public static Segment[] perpendicularTo(Segment segment, Vec2 point)
     {
         double vecX, vecY;
         vecX=segment.end.x-segment.start.x;
         vecY=segment.end.y-segment.start.y;
         Segment[] result = new Segment[2];
-        result[0] = new Segment(point, new Point(point.x+vecY,point.y-vecX));
-        result[1] = new Segment(point, new Point(point.x-vecY,point.y+vecX));
+        result[0] = new Segment(point, new Vec2(point.x+vecY,point.y-vecX));
+        result[1] = new Segment(point, new Vec2(point.x-vecY,point.y+vecX));
         return result;
     }
 }

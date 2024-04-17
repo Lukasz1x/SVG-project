@@ -1,21 +1,21 @@
 import java.util.Locale;
 
-public class Ellipse extends Shape
+public class Ellipse implements Shape
 {
-    private Point mid;
+    private Vec2 mid;
     private double dx, dy;
 
-    public Ellipse(Point mid, double dx, double dy, Style style)
+    public Ellipse(Vec2 mid, double dx, double dy)
     {
-        super(style);
+        //super(style);
         this.mid=mid;
         this.dx=dx;
         this.dy=dy;
     }
 
     @Override
-    public String toSvg()
+    public String toSvg(String param)
     {
-        return String.format(Locale.ENGLISH,"<ellipse rx=\"%f\" ry=\"%f\" cx=\"%f\" cy=\"%f\"  %s />",dx,dy,mid.x,mid.y,style.toSvg());
+        return String.format(Locale.ENGLISH,"<ellipse rx=\"%f\" ry=\"%f\" cx=\"%f\" cy=\"%f\"  />",dx,dy,mid.x,mid.y);
     }
 }

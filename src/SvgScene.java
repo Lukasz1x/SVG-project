@@ -32,14 +32,14 @@ public class SvgScene
     {
         try{
             FileWriter fw=new FileWriter(filename);
-            Point bounds = new Point(1000,1000);//getBounds();
+            Vec2 bounds = new Vec2(1000,1000);//getBounds();
             fw.write("<!DOCTYPE html>\n" +
                     "<html>\n" +
                     "<body>");
             fw.write(String.format(Locale.ENGLISH, "<svg height=\"%f\" width=\"%f\" xmlns=\"http://www.w3.org/2000/svg\">\n",bounds.y, bounds.x));
             for(Shape shape : shapes)
             {
-                fw.write(shape.toSvg() + "\n");
+                fw.write(shape.toSvg(" ") + "\n");
             }
             fw.write("</svg>\n" +
                     "</body>\n" +
