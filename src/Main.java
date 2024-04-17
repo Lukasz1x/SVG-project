@@ -30,8 +30,9 @@ public class Main {
 
         Polygon p1=new Polygon(new Vec2[]{A,B,C,D,E,F,G,H,I,J,K,L});
         SolidFillShapeDecorator heart=new SolidFillShapeDecorator(p1, "pink");
+        StrokeShapeDecorator h1 = new StrokeShapeDecorator(heart, "red", 3);
         SvgScene scene=new SvgScene();
-        scene.add(heart);
+        scene.add(h1);
         scene.add(e);
         //scene.add(Polygon.square(AB, style));
         scene.save("scene.html");
