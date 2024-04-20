@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9563dba6-229f-4d74-ae6e-0b464fcd2928" name="Changes" comment="lab3z2">
-      <change afterPath="$PROJECT_DIR$/src/StrokeShapeDecorator.java" afterDir="false" />
+    <list default="true" id="9563dba6-229f-4d74-ae6e-0b464fcd2928" name="Changes" comment="lab3z3">
+      <change afterPath="$PROJECT_DIR$/src/DropShadowDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TransformationDecorator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StrokeShapeDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StrokeShapeDecorator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SvgScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SvgScene.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,24 +51,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "JavaScript Debug.scene.html.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "Z:/Mój dysk/Programowanie/Java/SVG project",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.scene.html.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;Z:/Mój dysk/Programowanie/Java/SVG project&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -84,7 +87,10 @@
       <workItem from="1712996237913" duration="12235000" />
       <workItem from="1713009948702" duration="17000" />
       <workItem from="1713174903786" duration="3875000" />
-      <workItem from="1713334789876" duration="3469000" />
+      <workItem from="1713334789876" duration="3932000" />
+      <workItem from="1713365544681" duration="2228000" />
+      <workItem from="1713514022779" duration="134000" />
+      <workItem from="1713634477167" duration="2705000" />
     </task>
     <task id="LOCAL-00001" summary="lab1">
       <option name="closed" value="true" />
@@ -110,7 +116,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713336942750</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="lab3z3">
+      <option name="closed" value="true" />
+      <created>1713338554842</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1713338554842</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,7 +134,8 @@
     <MESSAGE value="lab1" />
     <MESSAGE value="lab2" />
     <MESSAGE value="lab3z2" />
-    <option name="LAST_COMMIT_MESSAGE" value="lab3z2" />
+    <MESSAGE value="lab3z3" />
+    <option name="LAST_COMMIT_MESSAGE" value="lab3z3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -133,6 +148,11 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/SvgScene.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

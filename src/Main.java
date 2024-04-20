@@ -29,10 +29,16 @@ public class Main {
         Ellipse e =new Ellipse(new Vec2(250, 550),200,50);
 
         Polygon p1=new Polygon(new Vec2[]{A,B,C,D,E,F,G,H,I,J,K,L});
-        SolidFillShapeDecorator heart=new SolidFillShapeDecorator(p1, "pink");
-        StrokeShapeDecorator h1 = new StrokeShapeDecorator(heart, "red", 3);
-        SvgScene scene=new SvgScene();
-        scene.add(h1);
+        Shape heart=new SolidFillShapeDecorator(p1, "pink");
+        heart = new StrokeShapeDecorator(heart, "red", 3);
+        TransformationDecorator.Builder builder = new TransformationDecorator.Builder();
+        builder.translate(new Vec2(10, 10))
+                .rotate(15,new Vec2(100,100))
+                .scale(new Vec2(1.25,1.25));
+        heart= builder.build(heart);
+        heart= new DropShadowDecorator(heart);
+        SvgScene scene=SvgScene.getInstance();
+        scene.add(heart);
         scene.add(e);
         //scene.add(Polygon.square(AB, style));
         scene.save("scene.html");

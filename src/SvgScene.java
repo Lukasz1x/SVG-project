@@ -7,6 +7,27 @@ import java.util.Locale;
 public class SvgScene
 {
     private List<Shape> shapes=new ArrayList<Shape>();
+    static SvgScene instance;
+    private List<String>defs=new ArrayList<>();
+    private static int index;
+
+    public int addFilter(String filter)
+    {
+        defs.add(String.format(filter, ++index));
+        return index;
+    }
+
+
+
+    static public SvgScene getInstance()
+    {
+        if(instance==null)
+        {
+            instance=new SvgScene();
+        }
+
+        return instance;
+    }
 
     public void add(Shape p)
     {
@@ -37,6 +58,14 @@ public class SvgScene
                     "<html>\n" +
                     "<body>");
             fw.write(String.format(Locale.ENGLISH, "<svg height=\"%f\" width=\"%f\" xmlns=\"http://www.w3.org/2000/svg\">\n",bounds.y, bounds.x));
+            fw.write("<defs>\n");
+
+            for(String d : defs)
+            {
+                fw.write(d);
+            }
+
+            fw.write("</defs>\n");
             for(Shape shape : shapes)
             {
                 fw.write(shape.toSvg(" ") + "\n");
