@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9563dba6-229f-4d74-ae6e-0b464fcd2928" name="Changes" comment="lab3z3">
-      <change afterPath="$PROJECT_DIR$/src/DropShadowDecorator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TransformationDecorator.java" afterDir="false" />
+    <list default="true" id="9563dba6-229f-4d74-ae6e-0b464fcd2928" name="Changes" comment="lab3z5">
+      <change afterPath="$PROJECT_DIR$/src/GradientFillShapeDecorator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StrokeShapeDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StrokeShapeDecorator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SvgScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SvgScene.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +66,20 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="SVG project" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -90,7 +101,8 @@
       <workItem from="1713334789876" duration="3932000" />
       <workItem from="1713365544681" duration="2228000" />
       <workItem from="1713514022779" duration="134000" />
-      <workItem from="1713634477167" duration="2705000" />
+      <workItem from="1713634477167" duration="3921000" />
+      <workItem from="1713721728493" duration="1967000" />
     </task>
     <task id="LOCAL-00001" summary="lab1">
       <option name="closed" value="true" />
@@ -124,7 +136,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713338554842</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="lab3z5">
+      <option name="closed" value="true" />
+      <created>1713638051768</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1713638051768</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,7 +155,8 @@
     <MESSAGE value="lab2" />
     <MESSAGE value="lab3z2" />
     <MESSAGE value="lab3z3" />
-    <option name="LAST_COMMIT_MESSAGE" value="lab3z3" />
+    <MESSAGE value="lab3z5" />
+    <option name="LAST_COMMIT_MESSAGE" value="lab3z5" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

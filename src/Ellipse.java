@@ -16,6 +16,6 @@ public class Ellipse implements Shape
     @Override
     public String toSvg(String param)
     {
-        return String.format(Locale.ENGLISH,"<ellipse rx=\"%f\" ry=\"%f\" cx=\"%f\" cy=\"%f\"  />",dx,dy,mid.x,mid.y);
+        return String.format(Locale.ENGLISH,"<ellipse rx=\"%f\" ry=\"%f\" cx=\"%f\" cy=\"%f\" %s />",dx,dy,mid.x,mid.y, param);
     }
 }
