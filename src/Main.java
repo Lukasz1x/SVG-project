@@ -39,18 +39,17 @@ public class Main {
         heart= new DropShadowDecorator(heart);
         GradientFillShapeDecorator.Builder b = new GradientFillShapeDecorator.Builder();
         b.addStop(0, "red")
-                .addStop(1, "pink")
-                .build();
-        heart=new GradientFillShapeDecorator(heart);
+                .addStop(0.5,"orange")
+                .addStop(1, "red");
+        heart=b.build(heart);
 
         GradientFillShapeDecorator.Builder be = new GradientFillShapeDecorator.Builder();
         be.addStop(0, "green")
                 .addStop(0.25, "yellow")
                 .addStop(0.50, "red")
                 .addStop(0.75, "blue")
-                .addStop(1, "black")
-                .build();
-        Shape el=new GradientFillShapeDecorator(e);
+                .addStop(1, "black");
+        Shape el= be.build(e);
         SvgScene scene=SvgScene.getInstance();
         scene.add(heart);
         scene.add(el);

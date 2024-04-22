@@ -2,12 +2,12 @@ import java.util.Locale;
 
 public class GradientFillShapeDecorator extends ShapeDecorator
 {
-    private static int index;
-    private int i;
-    public GradientFillShapeDecorator(Shape shape)
+    private int index;
+
+    public GradientFillShapeDecorator(Shape shape, int index)
     {
         super(shape);
-        i=index;
+        this.index=index;
     }
 
     public static class Builder
@@ -26,17 +26,18 @@ public class GradientFillShapeDecorator extends ShapeDecorator
             return this;
         }
 
-        public void build()
+        public GradientFillShapeDecorator build(Shape shape)
         {
             this.gradient+= "\t</linearGradient>";
-            index = SvgScene.getInstance().addFilter(this.gradient);
+            int i = SvgScene.getInstance().addFilter(this.gradient);
+            return new GradientFillShapeDecorator(shape, i);
         }
     }
 
     @Override
     public String toSvg(String param)
     {
-        String p=param + String.format("fill=\"url(#g%d)\" ", i);
+        String p=param + String.format("fill=\"url(#g%d)\" ", index);
         return super.toSvg(p);
     }
 }

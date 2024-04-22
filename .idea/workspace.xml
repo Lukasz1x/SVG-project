@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9563dba6-229f-4d74-ae6e-0b464fcd2928" name="Changes" comment="lab3z5">
-      <change afterPath="$PROJECT_DIR$/src/GradientFillShapeDecorator.java" afterDir="false" />
+    <list default="true" id="9563dba6-229f-4d74-ae6e-0b464fcd2928" name="Changes" comment="lab3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GradientFillShapeDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GradientFillShapeDecorator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -102,7 +102,9 @@
       <workItem from="1713365544681" duration="2228000" />
       <workItem from="1713514022779" duration="134000" />
       <workItem from="1713634477167" duration="3921000" />
-      <workItem from="1713721728493" duration="1967000" />
+      <workItem from="1713721728493" duration="2408000" />
+      <workItem from="1713779017593" duration="80000" />
+      <workItem from="1713780084347" duration="973000" />
     </task>
     <task id="LOCAL-00001" summary="lab1">
       <option name="closed" value="true" />
@@ -144,7 +146,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713638051768</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="lab3">
+      <option name="closed" value="true" />
+      <created>1713724014137</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1713724014137</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,7 +166,8 @@
     <MESSAGE value="lab3z2" />
     <MESSAGE value="lab3z3" />
     <MESSAGE value="lab3z5" />
-    <option name="LAST_COMMIT_MESSAGE" value="lab3z5" />
+    <MESSAGE value="lab3" />
+    <option name="LAST_COMMIT_MESSAGE" value="lab3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
